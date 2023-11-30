@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const dbConnect = require('./dbConnection');
+
+dbConnect();
 
 app.get('/', (req, res) => {
     res.send('Welcome hello world')
